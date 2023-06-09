@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width = device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="{{url_for('static', filename =  'css/main.css') }}">
+        <link rel = "stylesheet" href="{{url_for('static', filename =  'css/bootstrap.min.css')}} ">
+    <title>TIC TAC TOE</title>
+</head>
+<body>
+    <div class = "game-box">
+        <h1 class = "title">TIC <span>TAC</span> TOE</h1>
+        <div class = "container">            
+            <div class = "row">                
+                <div class = "col-sm settings">
+                    
+                    <div class = "row">
+                        <div class = "easy col-sm">Easy</div>
+                        <div class = "medium col-sm">Medium</div>
+                        <div class = "hard col-sm currentDifficulty">Hard</div>
+                    </div>
+                    
+                    <div class = "player-score">Player Score: 0</div>      
+                
+                </div>
+                
+                <div class = "col-sm status-action">
+                    <div class="row">
+                        <div class = "player-start col-sm player-start-set">Player Starts</div>
+                        <div class = "reset col-sm">Reset</div>         
+                    </div>
+
+                <div class = "com-score">Computer Score: 0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "game-grid">
+        
+        <div class = "game-cell top-left"></div>
+        <div class = "game-cell top-mid"></div>
+        <div class = "game-cell top-right"></div>
+        <div class = "game-cell mid-left"></div>
+        <div class = "game-cell mid-mid"></div>
+        <div class = "game-cell mid-right"></div>
+        <div class = "game-cell bot-left"></div>
+        <div class = "game-cell bot-mid"></div>
+        <div class = "game-cell bot-right"></div>
+    </div> 
+
+
+<script src = "{{ url_for('static', filename = 'js/app.js') }}"></script>   
+</body>
+</html>
